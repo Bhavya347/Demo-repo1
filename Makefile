@@ -5,6 +5,8 @@ SRC = $(wildcard *.c)
 OBJ = $(SRC:.c=.o)
 OUT = app
 
+.PHONY: all clean
+
 all: $(OUT)
 
 $(OUT): $(OBJ)
